@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marca</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+  <style>
+        /* Estilos personalizados */
+        .navbar-brand img {
+            height: 40px; 
+            width: auto;
+        }
+        
+        .team-icons-navbar {
+            background-color: #f8f9fa;
+            border-top: 1px solid #dee2e6;
+            border-bottom: 1px solid #dee2e6;
+        }
+        
+        .team-icon-btn {
+            border: none;
+            background: transparent;
+            padding: 5px;
+            margin: 0 2px;
+        }
+        
+        .team-icon-btn img {
+            width: 30px;
+            height: auto;
+            object-fit: contain;
+        }
+        
+        .marca-apuestas img {
+            width: 120px !important; 
+        }
+        
+        /* Responsive: ocultar iconos de equipos en móviles */
+        @media (max-width: 991.98px) {
+            .team-icons-navbar {
+                display: none !important;
+            }
+            
+            .navbar-brand {
+                margin: 0 !important;
+            }
+        }
+        
+        /* Estilos para el menú colapsable */
+        .navbar-collapse {
+            background-color: white;
+            border-radius: 8px;
+            margin-top: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        @media (max-width: 991.98px) {
+            .navbar-collapse {
+                position: absolute;
+                top: 100%;
+                left: 15px;
+                right: 15px; 
+                z-index: 1000; 
+                padding: 20px;
+            }
+        }
+        
+        .mobile-menu-section {
+            border-bottom: 1px solid #eee;
+            padding-bottom: 15px;
+            margin-bottom: 15px; 
+        }
+        
+        .mobile-menu-section:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+    <div class="container-fluid px-4">
+      <div class="d-none d-lg-flex align-items-center gap-3">
+        <a href="#" class="text-decoration-none fw-semibold text-dark d-flex align-items-center">
+          <img src="laportadadehoy.jpg" alt="Portada" style="width:25px; height:auto; object-fit:contain;" class="me-2">
+          <span style="font-size: 0.8rem; line-height:1.1;">La portada<br>de hoy</span>
+        </a>
+        <a href="#" class="text-decoration-none fw-semibold text-dark d-flex align-items-center">
+          <img src="laportadadehoy.jpg" alt="Portada" style="width:35px; height:auto; object-fit:contain;" class="me-2">
+          <span style="font-size: 0.8rem; line-height:1.1;">Radio<br>MARCA</span>
+        </a>
+        <a href="#" class="text-decoration-none fw-semibold text-dark d-flex align-items-center">
+          <img src="laligafantasy.png" alt="Portada" style="width:35px; height:auto; object-fit:contain;" class="me-2">
+          <span style="font-size: 0.8rem; line-height:1.1;">Laliga Fantasy<br>MARCA</span>
+        </a>
+      </div>
+
+      <a class="navbar-brand mx-auto" href="#">
+        <img src="marca.png" alt="MARCA" style="height:40px; width:auto;">
+      </a>
+
+      <div class="d-flex align-items-center">
+        <div class="dropdown me-3">
+          <button class="btn btn-outline-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown">
+            <img src="https://flagcdn.com/es.svg" width="20" alt="ES"> ES
+          </button>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="#">
+                <img src="https://flagcdn.com/us.svg" width="20" alt="EN" class="me-1"> EN
+              </a>
+            </li>
+          </ul>
+        </div>
+        <button class="btn btn-danger me-2 fw-bold">Suscríbete</button>
+        <button class="btn btn-outline-danger fw-bold">Iniciar sesión</button>
+      </div>
+    </div>
+  </nav>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+    <div class="container-fluid px-4">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menuPrincipal">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link fw-bold text-white" href="#">Fútbol</a></li>
+          <li class="nav-item"><a class="nav-link fw-bold text-white" href="#">Baloncesto</a></li>
+          <li class="nav-item"><a class="nav-link fw-bold text-white" href="#">Motor</a></li>
+          <li class="nav-item"><a class="nav-link fw-bold text-white" href="#">Polideportivo</a></li>
+          <li class="nav-item"><a class="nav-link fw-bold text-white" href="#">Más +</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light border-top-1 border-bottom-1">
+    <div class="container-fluid justify-content-center">
+      <ul class="navbar-nav flex-row flex-wrap justify-content-center">
+        
+        <li class="nav-item mx-1">
+          <button class="btn btn-light p-0">
+            <img src="i1.png" alt="Alavés" style="width:30px; height:auto; object-fit:contain;">
+          </button>
+        </li>
+
+        <li class="nav-item mx-1">
+          <button class="btn btn-light p-0">
+            <img src="i2.png" alt="Athletic Bilbao" style="width:30px; height:auto; object-fit:contain;">
+          </button>
+        </li>
+
+        <li class="nav-item mx-1">
+          <button class="btn btn-light p-0">
+            <img src="i3.png" alt="Atlético de Madrid" style="width:30px; height:auto; object-fit:contain;">
+          </button>
+        </li>
+
+        <li class="nav-item mx-1">
+          <button class="btn btn-light p-0">
+            <img src="i4.png" alt="Equipo" style="width:30px; height:auto; object-fit:contain;">
+          </button>
+        </li>
+
+        <li class="nav-item mx-1">
+          <button class="btn btn-light p-0">
+            <img src="i5.png" alt="Equipo" style="width: 25px; height:auto; object-fit:contain;">
+          </button>
+        </li>
+
+        <li class="nav-item mx-1">
+          <button class="btn btn-light p-0">
+            <img src="i6.png" alt="Equipo" style="width:25px; height:auto; object-fit:contain;">
+          </button>
+        </li>
+        <li class="nav-item mx-1">
+          <button class="btn btn-light p-0">
+            <img src="i7.png" alt="Equipo" style="width:30px; height:auto; object-fit:contain;">
+          </button>
+        </li>
+        <li class="nav-item mx-1">
+          <button class="btn btn-light p-0">
+            <img src="i8.png" alt="Equipo" style="width:30px; height:auto; object-fit:contain;">
+          </button>
+        </li>
+        <li class="nav-item mx-1">
+          <button class="btn btn-light p-0">
+            <img src="i9.png" alt="Equipo" style="width:25px; height:auto; object-fit:contain;">
+          </button>
+        </li>
+        <li class="nav-item mx-1">
+          <button class="btn btn-light p-0">
+            <img src="i10.png" alt="Equipo" style="width:30px; height:auto; object-fit:contain;">
+          </button>
+        </li>
+        <li class="nav-item mx-1">
+          <button class="btn btn-light p-0">
+            <img src="i11.png" alt="Equipo" style="width:30px; height:auto; object-fit:contain;">
+          </button>
+        </li>
+        <li class="nav-item mx-1">
+          <button class="btn btn-light p-0">
+            <img src="i12.png" alt="Equipo" style="width:30px; height:auto; object-fit:contain;">
+          </button>
+        </li>
+        <li class="nav-item mx-1">
+          <button class="btn btn-light p-0">
+            <img src="i13.png" alt="Equipo" style="width:30px; height:auto; object-fit:contain;">
+          </button>
+        </li>
+        <li class="nav-item mx-1">
+          <button class="btn btn-light p-0">
+            <img src="i14.jpg" alt="Equipo" style="width:30px; height:auto; object-fit:contain;">
+          </button>
+        </li>
+        <li class="nav-item mx-1">
+          <button class="btn btn-light p-0">
+            <img src="i15.png" alt="Equipo" style="width:30px; height:auto; object-fit:contain;">
+          </button>
+        </li>
+        <li class="nav-item mx-1">
+          <button class="btn btn-light p-0">
+            <img src="i16.png" alt="Equipo" style="width:20px; height:auto; object-fit:contain;">
+          </button>
+        </li>
+        <li class="nav-item mx-1">
+          <button class="btn btn-light p-0">
+            <img src="i17.png" alt="Equipo" style="width:30px; height:auto; object-fit:contain;">
+          </button>
+        </li>
+        <li class="nav-item mx-1">
+          <button class="btn btn-light p-0">
+            <img src="i18.png" alt="Equipo" style="width:30px; height:auto; object-fit:contain;">
+          </button> 
+        </li>
+        <li class="nav-item mx-1">
+          <button class="btn btn-light p-0">
+            <img src="i19.png" alt="Equipo" style="width:30px; height:auto; object-fit:contain;">
+          </button>
+        </li>
+        <li class="nav-item mx-1">
+          <button class="btn btn-light p-0">
+            <img src="i20.png" alt="Equipo" style="width:30px; height:auto; object-fit:contain;">
+          </button>
+        </li>
+        <li class="nav-item mx-1">
+          <button class="btn btn-light p-0">
+            <img src="marcaapuestas1.png" alt="Equipo" style="width: 180px; height:auto; object-fit:contain;">
+          </button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<div class="container my-4 text-center d-none d-lg-block" style="max-width: 100%; height: auto; padding: 50;" bis_skin_checked="1">
+  <img src="display.gif" alt="Animación" style="width: 70%; height: auto; cursor: pointer;">
+</div>
+
+<div class="container my-4 d-none d-lg-block" bis_skin_checked="1">
+  <div class="row align-items-center" bis_skin_checked="1">
+    <div class="col-md-3" bis_skin_checked="1">
+      <h4 class="m-0" style=" margin-right: 500px;">Agenda</h4>
+    </div>
+    <div class="col-md-9" bis_skin_checked="1">
+      <div class="row g-2" bis_skin_checked="1">
+        <div class="col-md-6 mb-3 mb-md-0" bis_skin_checked="1">
+          <div class="border" bis_skin_checked="1">
+            <div class="bg-danger text-white p-2 font-weight-bold" bis_skin_checked="1">
+              En Directo
+            </div>
+            <div class="bg-white p-2" bis_skin_checked="1">
+              <div bis_skin_checked="1">Todas las noticias</div>
+              <a href="#" style="font-weight: bold; color: black;">Última hora</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6" bis_skin_checked="1">
+          <div class="border" bis_skin_checked="1">
+            <div class="bg-danger text-white p-2 font-weight-bold" bis_skin_checked="1">
+              Lo mejor del día
+            </div>
+            <div class="bg-white p-2" bis_skin_checked="1">
+              <div bis_skin_checked="1">Agenda</div>
+              <a href="#" style="font-weight: bold; color: black;">Lunes</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container my-4">
+  <div class="row">
+    <div class="col-lg-8">
+      <div class="card bg-dark text-white border-0">
+        <img src="bicicleta.jpeg" class="card-img w-100" alt="Jugadores Champions" style="object-fit: cover; height: 400px;">
+        <div class="card-img-overlay d-flex flex-column justify-content-end p-4" style="background: linear-gradient(to top, rgba(0,0,0,0.85), transparent);">
+          <p class="mb-2"><span class="badge text-bg-primary text-uppercase">Ciclismo</span></p>
+          <p>Descubre al ciclista de Colima</p>
+          <h1 class="card-title fw-bold">¿Podrá Omar ganar el mundial de Ciclismo?</h1>
+        </div>
+      </div>
+      <div class="d-flex justify-content-between align-items-center mt-2">
+        <small class="text-muted text-uppercase">Omar Guerrero Díaz</small>
+        <div class="d-flex align-items-center text-muted">
+          <i class="bi bi-chat-fill me-2"></i>
+          <span>468</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4">
+      <div class="d-flex mb-3">
+        <img src="alitan.avif" alt="Noticia 1" style="width:110px; height:75px; object-fit:cover;">
+        <div class="ms-3">
+          <p class="text-primary fw-bold small mb-1 text-uppercase">Alan Clealand</p>
+          <h6 class="fw-bold mb-1">Excelente actuación en los juegos olímpicos</h6>
+          <div class="d-flex justify-content-between align-items-center">
+            <small class="text-muted text-uppercase">O. Guerrero y A. Cervantes</small>
+            <div class="d-flex align-items-center text-muted">
+              <i class="bi bi-chat-fill me-2"></i>
+              <span>306</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="d-flex mb-3">
+        <img src="cr7.jpg" alt="Noticia 2" style="width:110px; height:75px; object-fit:cover;">
+        <div class="ms-3">
+          <p class="text-primary fw-bold small mb-1 text-uppercase">Fichajes</p>
+          <h6 class="fw-bold mb-1">Mercado: Fuertes rumores de "El bicho" que llegue a las Chivas</h6>
+          <div class="d-flex justify-content-end align-items-center w-100">
+            <div class="d-flex align-items-center text-muted">
+              <i class="bi bi-chat-fill me-2"></i>
+              <span>92</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="d-flex">
+        <img src="embapena.jpg" alt="Noticia 3" style="width:110px; height:75px; object-fit:cover;">
+        <div class="ms-3">
+          <p class="text-primary fw-bold small mb-1 text-uppercase">Real Madrid</p>
+          <h6 class="fw-bold mb-1">Sigue anotando muchos goles en la Liga de Campeones</h6>
+          <div class="d-flex justify-content-between align-items-center">
+            <small class="text-muted text-uppercase">Félix</small>
+            <div class="d-flex align-items-center text-muted">
+              <i class="bi bi-chat-fill me-2"></i>
+              <span>206</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container my-4">
+  <div class="row g-3">
+    <div class="col-lg-4">
+      <div class="card border-0">
+        <img src="ch14.avif" class="card-img-top" alt="Noticia 1" style="height:200px; object-fit:cover;">
+        <div class="card-body px-0">
+          <span class="badge bg-primary text-uppercase">Fútbol</span>
+          <h6 class="fw-bold mt-2">Chicharito Hernández hace fuerte polémica en redes sociales</h6>
+        </div>
+      </div>
+      <hr class="my-3">
+    </div>
+    <div class="col-lg-4">
+      <div class="card border-0">
+        <img src="cr7messi.jpg" class="card-img-top" alt="Noticia 2" style="height:200px; object-fit:cover;">
+        <div class="card-body px-0">
+          <span class="badge bg-info text-uppercase">Noticia Mundial</span>
+          <h6 class="fw-bold mt-2">Cristiano habla sobre Messi sobre quien es el verdadero GOAT</h6>
+        </div>
+      </div>
+      <hr class="my-3">
+    </div>
+    <div class="col-lg-4">
+      <div class="card border-0">
+        <img src="champions league.jpg" class="card-img-top" alt="Noticia 3" style="height:200px; object-fit:cover;">
+        <div class="card-body px-0">
+          <span class="badge bg-success text-uppercase">México</span>
+          <h6 class="fw-bold mt-2">Las chivas sueñan con la Champions League</h6>
+        </div>
+      </div>
+      <hr class="my-3">
+    </div>
+  </div>
+
+  <div class="row g-3">
+    <div class="col-lg-6">
+      <div class="d-flex pb-3">
+        <img src="mundial.jpg" alt="Noticia 4" style="width:150px; height:100px; object-fit:cover;">
+        <div class="ms-3">
+          <p class="text-primary fw-bold small mb-1 text-uppercase">Mundial de clubes</p>
+          <h6 class="fw-bold mb-1">¿Qué equipos van al mundial de clubes?</h6>
+          <div class="d-flex align-items-center text-muted">
+            <i class="bi bi-chat-fill me-2"></i>
+            <span>14</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-6">
+      <div class="d-flex pb-3 justify-content-end text-end">
+        <img src="seleccion.jpg" alt="Noticia 5" style="width:150px; height:100px; object-fit:cover;">
+        <div class="ms-3">
+          <p class="text-primary fw-bold small mb-1 text-uppercase">Selección Mexicana</p>
+          <h6 class="fw-bold mb-1">Con las nuevas jóvenes promesas</h6>
+          <div class="d-flex justify-content-end align-items-center text-muted">
+            <i class="bi bi-chat-fill me-2"></i>
+            <span>64</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="my-4">
+
+  <div class="row g-3">
+    <div class="col-lg-6">
+      <div class="card border-0">
+        <img src="lunin.jpg" class="card-img-top" alt="Noticia 4" style="height:250px; object-fit:cover;">
+        <div class="card-body px-0">
+          <span class="badge bg-primary text-uppercase">Real Madrid</span>
+          <h6 class="fw-bold mt-2">Lunin, muy cerca de irse cedido al Leganés</h6>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="card border-0">
+        <img src="luka.jpg" class="card-img-top" alt="Noticia 5" style="height:250px; object-fit:cover;">
+        <div class="card-body px-0">
+          <span class="badge bg-primary text-uppercase">Real Madrid</span>
+          <h6 class="fw-bold mt-2">Luka Modric es mejor que todo el Barcelona</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="bg-dark text-white mt-4">
+  <div class="row mt-4 pt-4 border-top text-center">
+    <a>Otras webs de Unidad Editorial</a>
+  </div>
+  <div class="container py-4 mt-4 pt-4 border-top">
+    <div class="row">
+      
+      <div class="col-12 col-md-3 mb-4">
+        <h6>Marca</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white text-decoration-none">App Marca</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Apuestas Deportivas</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Clasificación LaLiga</a></li> 
+          <li><a href="#" class="text-white text-decoration-none">Calendario LaLiga</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Hemeroteca Marca</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Marca eSports</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Marca Madrid</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Marca en Orbit</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Zona Marca</a></li>
+        </ul>
+      </div>
+      
+      <div class="col-12 col-md-3 mb-4">
+        <h6>Ocio y Moda</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white text-decoration-none">Tiramillas</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Moda - Telva</a></li>
+          <li><a href="#" class="text-white text-decoration-none">BUHO Magazine</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Tiramillas</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Marca TV</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Marca Entradas</a></li> 
+          <li><a href="#" class="text-white text-decoration-none">Mi bebé y yo</a></li>
+        </ul>
+      </div>
+      
+      <div class="col-12 col-md-3 mb-4">
+        <h6>Unidad Editorial</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white text-decoration-none">El Mundo</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Expansión</a></li> 
+          <li><a href="#" class="text-white text-decoration-none">CuidatePlus</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Diario Médico</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Correo Farmacéutico</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Suscripción Marca</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Suscripción El Mundo</a></li>
+        </ul>
+      </div>
+
+      <div class="col-12 col-md-3 mb-4">
+        <h6>Formación y Empleo</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white text-decoration-none">Escuela Unidad Editorial</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Unidad Editorial</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Expansión y Empleo</a></li>
+        </ul>
+      </div>
+      
+    </div>
+    
+    <div class="row mt-4 pt-4 border-top">
+      <div class="col-12">
+        <p class="text-center mb-2">© Agosto 2018 Unidad Editorial Información Deportiva, S.L.U. Todos los derechos reservados.</p>
+        <div class="d-flex flex-wrap justify-content-center gap-3 mb-3">
+          <a href="#" class="text-white text-decoration-none small">Términos y condiciones de uso</a>
+          <a href="#" class="text-white text-decoration-none small">Política de privacidad</a>
+          <a href="#" class="text-white text-decoration-none small">Política de cookies</a>
+          <a href="#" class="text-white text-decoration-none small">Certificado por OJD</a>
+          <a href="#" class="text-white text-decoration-none small">Contacto</a>
+          <a href="#" class="text-white text-decoration-none small">Publicidad</a>
+          <a href="#" class="text-white text-decoration-none small">Ayuda</a>
+          <a href="#" class="text-white text-decoration-none small">Nuestro equipo</a>
+        </div>
+        <p class="text-center small mb-3">Venta de contenidos</p>
+        <p class="text-center small mb-3">Síguenos en</p>
+        
+        <div class="d-flex justify-content-center gap-2"> 
+          <a href="#" class="btn btn-primary btn-sm rounded-circle" style="width: 40px; height: 40px;">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a href="#" class="btn btn-info btn-sm rounded-circle" style="width: 40px; height: 40px;">
+            <i class="bi bi-twitter"></i>
+          </a>
+          <a href="#" class="btn btn-danger btn-sm rounded-circle" style="width: 40px; height: 40px;">
+            <i class="bi bi-google"></i>
+          </a>
+          <a href="#" class="btn btn-warning btn-sm rounded-circle" style="width: 40px; height: 40px;"> 
+            <i class="bi bi-rss"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+  .card-img {
+    height: 400px;          /* Ajusta altura fija */
+    object-fit: cover;      /* Recorta la imagen sin deformarla */
+  }
+
+  /* Contenedor de noticias de la derecha */
+  .noticias-laterales img {
+    width: 110px;
+    height: 75px;
+    object-fit: cover;
+  }
